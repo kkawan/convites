@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Formal</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="Flamengo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="cabeçalho">
+          <h1>Convite Formal</h1>
+        </div>
+      </header>
+    <h1>bora sair?</h1>
+    <div class="yes-or-no">
+    <button id="sim">
+        <a href="">Sim</a>
+    </button>
+
+    <button id="aumentar">Não</button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let head = document.getElementById("sim");
+        let i = 0;
+        let myArray = ['40px', '80px','160px', '320px', '640px', '1280px']
+        function increaseFontSize() {
+            head.style.fontSize = myArray[i++];
+        }
+        let myBtn = document.getElementById("aumentar");
+        myBtn.addEventListener("click", increaseFontSize)
+
+
+    </script>
+</body>
+
+</html>
